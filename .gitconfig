@@ -11,7 +11,7 @@
         name = WalkxCode
 	signingkey = A4728B5A76CE4B6E
 [core]
-        editor = code-insiders
+	editor = code-insiders
 
 [push]
 	default = simple

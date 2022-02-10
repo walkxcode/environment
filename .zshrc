@@ -5,7 +5,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="ys"
 
 # Plugins
-plugins=(git ubuntu npm pip python zsh-syntax-highlighting zsh-autosuggestions zsh-completions)
+plugins=(git ubuntu npm pip python zsh-syntax-highlighting zsh-autosuggestions zsh-completions zsh-256color auto-fortune-cowsay)
 
 # Init oh-my-zsh
 source $ZSH/oh-my-zsh.sh
