@@ -7,8 +7,8 @@
 	status = auto
 
 [user]
-        email = walkxnl@gmail.com
-        name = WalkxCode
+	email = walkxnl@gmail.com
+	name = WalkxCode
 	signingkey = A4728B5A76CE4B6E
 [core]
 	editor = code-insiders
