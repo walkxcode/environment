@@ -1,6 +1,10 @@
 # Set oh-my-zsh location
 export ZSH="$HOME/.oh-my-zsh"
 
+# Exports
+export LANG=en_US.UTF-8
+export EDITOR=nano
+
 # Theme
 ZSH_THEME="ys"
 
