@@ -67,8 +67,17 @@
   "editor.acceptSuggestionOnEnter": "off",
   "htmlhint.enable": true,
   "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+    "postcss": "css"
+  },
   "tabnine.experimentalAutoImports": true,
   "tabnine.receiveBetaChannelUpdates": true,
+
+  // StyleLint
+  "css.validate": false,
+  "stylelint.enable": true,
+  "scss.validate": false,
+
 
   // Status
   "eslint.alwaysShowStatus": true,
