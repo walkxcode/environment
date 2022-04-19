@@ -11,7 +11,7 @@
   "editor.fontLigatures": true,
   "editor.fontFamily": "'FantasqueSansMono Nerd Font'",
   "editor.fontSize": 16.5,
-  "editor.fontWeight": "600",
+  // "editor.fontWeight": "500",
   "editor.lineHeight": 0,
   "editor.letterSpacing": 0.5,
   "editor.wordWrap": "on",
@@ -126,6 +126,6 @@
 
 
   // Liveserver
-  "liveServer.settings.donotVerifyTags": true,
-  "liveServer.settings.donotShowInfoMsg": true,
+  "fiveServer.navigate": true,
+  "fiveServer.port": 4200,
 }
