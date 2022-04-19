@@ -1,0 +1,131 @@
+{
+  // Theming
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.colorTheme": "Cobalt2",
+  "window.title": "${activeEditorLong}${separator}${rootPath}",
+  "workbench.editor.highlightModifiedTabs": true,
+
+
+  // Type
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'FantasqueSansMono Nerd Font'",
+  "editor.fontSize": 16.5,
+  "editor.fontWeight": "600",
+  "editor.lineHeight": 0,
+  "editor.letterSpacing": 0.5,
+  "editor.wordWrap": "on",
+  "editor.formatOnType": true,
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": { "source.fixAll": true },
+
+
+  // Layout
+  "workbench.sideBar.location": "right",
+  "debug.toolBarLocation": "docked",
+  "workbench.startupEditor": "none",
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideTabs": false,
+  "zenMode.hideActivityBar": false,
+
+
+  // Explorer
+  "explorer.sortOrder": "type",
+  "files.exclude": {
+    "**/.git": false
+  },
+
+
+
+  // Annoying things
+  "gitlens.showWelcomeOnInstall": false,
+  "material-icon-theme.showWelcomeMessage": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "security.workspace.trust.enabled": false,
+
+
+  // Rendering
+  "editor.minimap.renderCharacters": false,
+  "editor.renderWhitespace": "all",
+
+
+  "editor.linkedEditing": true,
+
+  // Cursor
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": true,
+
+
+  // Brackets
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.highlightActiveIndentation" : true,
+  "editor.guides.bracketPairsHorizontal": "active",
+
+  // Suggestions
+  "editor.acceptSuggestionOnEnter": "off",
+  "htmlhint.enable": true,
+  "emmet.triggerExpansionOnTab": true,
+  "tabnine.experimentalAutoImports": true,
+  "tabnine.receiveBetaChannelUpdates": true,
+
+  // Status
+  "eslint.alwaysShowStatus": true,
+  "editor.suggest.showStatusBar": true,
+
+  // Terminal
+  "terminal.external.windowsExec": "wt.exe",
+  "terminal.integrated.fontFamily": "FantasqueSansMono Nerd Font",
+  "terminal.integrated.fontWeight": "bold",
+  "terminal.integrated.fontSize": 16,
+  "terminal.explorerKind": "external",
+  "terminal.external.osxExec": "iTerm.app",
+
+
+  // Discord RPC
+  "discord.detailsIdling": "Idling (Probably looking at stackoverflow)",
+  "discord.removeRemoteRepository": true,
+
+
+
+  // Formatting
+  "files.autoSave": "onFocusChange",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "remimarsal.prettier-now",
+
+  "[html]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": true
+  },
+
+  "[json]": {
+    "editor.defaultFormatter": "remimarsal.prettier-now",
+    "editor.formatOnSave": true
+  },
+
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+
+  "[css]": {
+    "editor.defaultFormatter": "aeschli.vscode-css-formatter"
+  },
+
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "remimarsal.prettier-now"
+  },
+
+
+  // Liveserver
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+}
