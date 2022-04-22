@@ -1,0 +1,82 @@
+[character]
+success_symbol = "[->](bold #f2f1f2) "
+error_symbol = "[✗](bold #ff413b) "
+
+[directory]
+truncation_length = 0
+truncate_to_repo = false
+style = "bold #fe8372"
+repo_root_style = "italic #b0fd7a"
+repo_root_format = "[$before_root_path]($style)[$repo_root]($style) / 🌍[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) "
+home_symbol = "🏠 ~"
+read_only = " "
+
+
+[git_branch]
+style = "bold #b5fa73"
+symbol = " "
+format = "on [$symbol$branch]($style) "
+
+[git_status]
+style = "#a5d5fe"
+format = '([\($all_status$ahead_behind\)]($style) )'
+
+[time]
+disabled = false
+style = "italic #a5d5fe"
+format = "[$time]($style) "
+
+
+[aws]
+symbol = "  "
+
+[buf]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+
+[rust]
+symbol = " "

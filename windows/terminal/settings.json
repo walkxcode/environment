@@ -1,9 +1,10 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
+    "actions":
     [
         {
-            "command": 
+            "command":
             {
                 "action": "copy",
                 "singleLine": false
@@ -19,7 +20,7 @@
             "keys": "ctrl+shift+f"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "splitPane",
                 "split": "auto",
@@ -30,56 +31,47 @@
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{78e390db-1bff-4533-9d7c-20f53d8bafa1}",
-    "profiles": 
+    "defaultProfile": "{90cbdc15-f4fe-49d2-a245-ec066b70845f}",
+    "profiles":
     {
-        "defaults": 
+        "defaults":
         {
-            "acrylicOpacity": 0.69999999999999996,
             "backgroundImageOpacity": 0.089999999999999997,
             "bellStyle": "none",
-            "colorScheme": "Blue Matrix",
+            "colorScheme": "Vintage",
             "experimental.retroTerminalEffect": false,
-            "font": 
+            "font":
             {
-                "face": "Hack NF",
-                "size": 11,
+                "face": "FantasqueSansMono Nerd Font Mono",
+                "size": 15,
                 "weight": "semi-bold"
             },
+            "opacity": 70,
             "useAcrylic": true
         },
-        "list": 
+        "list":
         [
             {
-                "commandline": "C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.2.1.0_x64__8wekyb3d8bbwe\\pwsh.exe -nologo",
+                "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe -nologo",
                 "guid": "{90cbdc15-f4fe-49d2-a245-ec066b70845f}",
                 "hidden": false,
-                "icon": "C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.2.1.0_x64__8wekyb3d8bbwe\\assets\\StoreLogo.png",
-                "name": "PowerShell (Mod)",
+                "icon": "C:\\Program Files\\PowerShell\\7\\assets\\Powershell_av_colors.ico",
+                "name": "PowerShell",
                 "startingDirectory": "."
             },
             {
-                "commandline": "wsl.exe -d Ubuntu-20.04",
-                "guid": "{78e390db-1bff-4533-9d7c-20f53d8bafa1}",
-                "icon": "ms-appdata:///roaming/ubuntu_32px.png",
-                "name": "WSL",
-                "startingDirectory": "."
-            },
-            {
-                "commandline": "powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
             },
             {
-                "commandline": "cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt"
             }
         ]
     },
-    "schemes": 
+    "schemes":
     [
         {
             "background": "#1D2342",
@@ -149,6 +141,29 @@
             "selectionBackground": "#FFFFFF",
             "white": "#CCCCCC",
             "yellow": "#C19C00"
+        },
+        {
+            "background": "#132738",
+            "black": "#000000",
+            "blue": "#1460D2",
+            "brightBlack": "#555555",
+            "brightBlue": "#5555FF",
+            "brightCyan": "#6AE3FA",
+            "brightGreen": "#3BD01D",
+            "brightPurple": "#FF55FF",
+            "brightRed": "#F40E17",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#EDC809",
+            "cursorColor": "#F0CC09",
+            "cyan": "#00BBBB",
+            "foreground": "#FFFFFF",
+            "green": "#38DE21",
+            "name": "Cobalt2",
+            "purple": "#FF005D",
+            "red": "#FF0000",
+            "selectionBackground": "#18354F",
+            "white": "#BBBBBB",
+            "yellow": "#FFE50A"
         },
         {
             "background": "#282C34",

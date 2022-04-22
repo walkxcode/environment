@@ -60,7 +60,6 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.guides.bracketPairs": true,
-  "editor.guides.highlightActiveIndentation" : true,
   "editor.guides.bracketPairsHorizontal": "active",
 
   // Suggestions
@@ -131,6 +130,10 @@
 
   "[typescriptreact]": {
     "editor.defaultFormatter": "remimarsal.prettier-now"
+  },
+
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
 
 
