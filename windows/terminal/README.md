@@ -3,6 +3,8 @@ Requirements:
 + Powershell 7
 + Windows Terminal
 
+**All config files are placed in $HOME\.config**
+
 
 ```pwsh
 winget install -e --id Git.Git
