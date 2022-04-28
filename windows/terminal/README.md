@@ -13,7 +13,7 @@ iwr -useb get.scoop.sh | iex
 
 scoop install nano sudo touch curl cowsay starship
 
-nano $PROFILE.CurrentUserCurrentHost
+--- Create/Edit $PROFILE.CurrentUserCurrentHost ---🛠️🛠️
 ". $env:USERPROFILE\.config\powershell\profile.ps1"
 
 Install-Module -Name posh-git -Scope CurrentUser -Force
