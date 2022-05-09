@@ -10,8 +10,9 @@
 	email = walkxnl@gmail.com
 	name = WalkxCode
 	signingkey = A4728B5A76CE4B6E
+
 [core]
-	editor = code-insiders
+	editor = \"G:\\software\\Microsoft VS Code Insiders\\bin\\code-insiders\" --wait
 
 [push]
 	default = simple
@@ -33,6 +34,7 @@
 	a = add
 	s = status
 	st = status
+	ac = commit -am
 	ci = commit
 	b = branch
 	co = checkout
@@ -76,5 +78,3 @@
 	pushInsteadOf = "https://github.com/"
 	pushInsteadOf = "http://github.com/"
 	pushInsteadOf = "gh:"
-
-
