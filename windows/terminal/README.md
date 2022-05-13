@@ -30,4 +30,7 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 scoop install fzf
 Install-Module PSFzf -Scope CurrentUser -Force
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
+
+(Optional)
+npm i -g gitmoji-cli
 ```
