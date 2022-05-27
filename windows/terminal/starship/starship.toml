@@ -1,82 +1,87 @@
-[character]
-success_symbol = "[->](bold #f2f1f2) "
-error_symbol = "[✗](bold #ff413b) "
+format = """\
+  $status\
+  $cmd_duration\
+  $directory\
+  $git_branch\
+  $git_commit\
+  $git_state\
+  $git_status\
+  $kubernetes\
+  $helm\
+  $golang\
+  $nodejs\
+  $terraform\
+  $package\
+  $custom\
+  $time\
+  $line_break\
+  $jobs\
+  $character\
+  """
+
+command_timeout = 1000
+add_newline = true
 
 [directory]
-truncation_length = 0
-truncate_to_repo = false
-style = "bold #fe8372"
-repo_root_style = "italic #b0fd7a"
-repo_root_format = "[$before_root_path]($style)[$repo_root]($style) / 🌍[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) "
-home_symbol = "🏠 ~"
-read_only = " "
+format = "┏ [$path]($style)[$read_only]($read_only_style) "
 
+[character]
+success_symbol = "┗ [>](yellow)"
+error_symbol = "┗ [✗](fg:204)"
 
 [git_branch]
-style = "bold #b5fa73"
-symbol = " "
-format = "on [$symbol$branch]($style) "
+format = "⎮ [$symbol$branch]($style) "
+symbol = "🌱 "
+
+[git_commit]
+only_detached = true
 
 [git_status]
-style = "#a5d5fe"
-format = '([\($all_status$ahead_behind\)]($style) )'
-
-[time]
-disabled = false
-style = "italic #a5d5fe"
-format = "[$time]($style) "
-
+format = '\($all_status$ahead_behind\) '
+up_to_date = "[✓](green)"
+modified = "[!](bold fg:208)"
+untracked = "[?](bold fg:75)"
+staged = '[++\($count\)](green)'
 
 [aws]
-symbol = "  "
-
-[buf]
-symbol = " "
-
-[conda]
-symbol = " "
-
-[dart]
-symbol = " "
-
-[docker_context]
-symbol = " "
-
-[elixir]
-symbol = " "
-
-[elm]
-symbol = " "
+symbol = " "
+format = "⎮ [$symbol$profile]($style) "
 
 [golang]
 symbol = " "
+format = "⎮ [$symbol$version](fg:45) "
 
-[haskell]
-symbol = " "
+[kubernetes]
+format = '⎮ [$symbol$context (\($namespace\))]($style) '
+symbol = "ﴱ "
+style = "bold blue"
+disabled = false
+[kubernetes.context_aliases]
+"gs-(?P<cluster>.+)" = "$cluster [MC]"
 
-[hg_branch]
-symbol = " "
-
-[java]
-symbol = " "
-
-[julia]
-symbol = " "
-
-[memory_usage]
-symbol = " "
-
-[nim]
-symbol = " "
-
-[nix_shell]
-symbol = " "
+[terraform]
+format = "⎮ [$symbol$version]($style) "
 
 [nodejs]
-symbol = " "
+symbol = " "
+
+[status]
+symbol = "✗"
+format = "[↪ $symbol $common_meaning$signal_name$maybe_int](fg:204)\n"
+map_symbol = true
+disabled = false
+
+[helm]
+format = "⎮ [$symbol$version]($style) "
+symbol = " "
+
+[cmd_duration]
+format = " took [$duration]($style) \n"
 
 [package]
-symbol = " "
+symbol = "📦"
+format = "⎮ [$symbol$version]($style) "
 
-[rust]
-symbol = " "
+[jobs]
+number_threshold = 1
+format = "┣ [$symbol $number background jobs\n]($style)"
