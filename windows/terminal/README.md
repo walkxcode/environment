@@ -1,36 +1,55 @@
-Requirements:
-+ FantasqueSansMno Nerd Font Mono
-+ Powershell 7
-+ Windows Terminal
-
-**All config files are placed in $HOME\.config**
+## Terminal
+My terminal setup with WSL and Fish shell.
 
 
-```pwsh
-winget install -e --id Git.Git
+### Settings up WSL2
 
-iwr -useb get.scoop.sh | iex
+1. Open Windows Terminal
+2. Run `wsl --install`
+3. Restart your PC to finish the WSL installation
+4. Open Windows Terminal
+5. Run `wsl --install -D Ubuntu`
+6. Follow the installatin steps
+7. Run `sudo apt-get update && sudo apt-get upgrade -y`
 
-scoop install nano sudo touch curl cowsay starship
+### Setting up Windows Terminal
 
-mkdir ~/.config/powershell
-touch ~/.config/powershell/profile.ps1
---- Create/Edit $PROFILE.CurrentUserCurrentHost ---🛠️🛠️
-". $env:USERPROFILE\.config\powershell\profile.ps1"
+1. Install the VictorMono nerd font from [NerdFonts](nerdfonts.com/)
+2. `Settings > Open JSON file > Copy settings from repo`
+3. Restart Windows Terminal
 
-Install-Module -Name posh-git -Scope CurrentUser -Force
+### Setting up Fish shell
 
-Install-Module -Name Terminal-Icons -Repository PSGallery -Force
-Install-Module -Name z -Force
+1. Open Windows Terminal
+2. Run `sudo apt-add-repository ppa:fish-shell/release-3`
+3. Run `sudo apt-get update`
+4. Run `sudo apt-get install fish`
+5. Run `fish`
+6. Run `chsh -s (which fish)`
 
-Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
-Set-PSReadLineOption -PredictionSource History
-Set-PSReadLineOption -PredictionViewStyle ListView
+**Install Fisher plugin manager**
 
-scoop install fzf
-Install-Module PSFzf -Scope CurrentUser -Force
-Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
+1. Run `curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher`
 
-(Optional)
-npm i -g gitmoji-cli
-```
+**Install & Configure Tide shell theme**
+1. Run `fisher install ilancosman/tide@v5`
+2. Copy the Tide config from the repo to `~/.config/fish/conf.d/tide.fish`
+
+**Install Exa**
+1. Run `sudo apt-get install libgit2-dev rustc`
+2. Run `sudo apt-mark auto rustc`
+3. Run `git clone https://github.com/ogham/exa --depth=1`
+4. Run `cd exa`
+5. Run `cargo build --release && cargo test`
+6. Run `sudo install target/release/exa /usr/local/bin/exa`
+7. Run `cd ..`
+8. Run `rm -rf exa`
+9. Run `sudo apt purge --autoremove`
+
+**Installing other plugins**
+1. Run `fisher install jethrokuan/z`
+2. Run `sudo apt install peco`
+
+**Configure Fish shell**
+1. Copy the `config.fish` file from the repo to `~/.config/fish/config.fish`
+2. Copy all functions from the repo to `~/.config/fish/functions`

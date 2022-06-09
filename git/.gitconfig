@@ -12,7 +12,7 @@
 	signingkey = A4728B5A76CE4B6E
 
 [core]
-	editor = \"G:\\software\\Microsoft VS Code Insiders\\bin\\code-insiders\" --wait
+	editor = \"code-insiders" --wait
 
 [push]
 	default = simple
