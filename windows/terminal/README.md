@@ -46,6 +46,11 @@ My terminal setup with WSL and Fish shell.
 8. Run `rm -rf exa`
 9. Run `sudo apt purge --autoremove`
 
+**Installing NVM**
+1. Run `fished install edc/bass`
+2. Run `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
+3. Complete step 'Configure Fish shell'
+
 **Installing other plugins**
 1. Run `fisher install jethrokuan/z`
 2. Run `sudo apt install peco`
