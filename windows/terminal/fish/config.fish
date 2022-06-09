@@ -17,7 +17,7 @@ alias lla "ll -A"
 alias g git
 alias code "code-insiders"
 
-set -gx EDITOR code
+set -gx EDITOR code-insiders
 
 set -gx PATH bin $PATH
 set -gx PATH ~/bin $PATH
